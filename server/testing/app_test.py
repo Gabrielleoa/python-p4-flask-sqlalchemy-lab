@@ -21,7 +21,7 @@ class TestApp:
         '''has a resource available at "/animal/<id>".'''
         response = app.test_client().get('/animal/1')
         assert(response.status_code == 200)
-
+#dd
     def test_animal_route_has_attrs(self):
         '''displays attributes in animal route in <ul> tags called Name, Species.'''
         name_ul = re.compile(r'\<ul\>[Nn]ame.+')
